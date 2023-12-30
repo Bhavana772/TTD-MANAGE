@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ROOM BOOKING FORM</title>
+	<link rel="stylesheet" href="room.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<form id="form-group" method="POST" action="connectphp.php">
+                      
+			<div id="form">
+				<h1 class="text-white text-center">Booking Now</h2>
+				<div id="first-group">
+				
+					<div id="content">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<input type="text"  id="FirstName" placeholder="First Name" name="firstName">
+					</div>
+					
+					<div id="content">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<input type="number"   id="PhoneNumber" placeholder="Phone Number" name="number">
+					</div>
+					
+					<div id="content">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+						<input type="date" id="date" placeholder="Departure Dates"name="date">
+					</div>
+					
+					<div id="content">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<select id="input-group" style="background-color: black;">
+							<option value="">No. of guests</option>
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+							<option value="">5-10</option>
+						</select>
+					</div>
+					
+				</div>
+				<div id="second-group">
+					<div id="content">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<input type="text" id="LastName" placeholder="Last Name" name="LastName">
+					</div>
+					<div id="content">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<input type="email"  id="Email" placeholder="Email" name="email">
+					</div>
+					<div id="content">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+						<input type="date" id="date" placeholder="Arrival Date" name="date">
+					</div>
+					
+					<div id="content">
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<select id="input-group" style="background-color: black;">
+							<option value="">Room Type</option>
+							<option value="">AC</option>
+							<option value="">Non-AC</option>
+							<option value="">Single Bed</option>
+							<option value="">Double Bed</option>
+							
+						</select>
+					</div>
+				
+				</div>
+				<span style="color:red;"  id="error"></span>
+				<button type="submit" value="Submit" id="submit-btn">Book Now</button>
+			</div>
+		</form>
+	</div>
+	 <script src="room.js"></script>
+</body>
+</html>

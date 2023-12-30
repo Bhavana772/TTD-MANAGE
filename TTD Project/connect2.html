@@ -1,0 +1,33 @@
+<?php
+	$fullName =$_POST['fullName'];
+	$email =$_POST['email'];
+	$number =$_POST['number'];
+	$date =$_POST['date'];
+	$ADnumber =$_POST['ADnumber'];
+	$file =$_POST['file'];
+	$valid =$_POST['valid'];
+
+	//database connection
+	
+	$connection=mysqli_connect("localhost","root","","account");
+if($connection)
+{
+	echo "connection established"."<br>";
+}
+else
+{
+	echo "error:".mysqli_error($connection);
+}
+$query="CREATE TABLE details(fullName VARCHAR(15) NOT NULL,email VARCHAR(35),number integer(10),date VARCHAR(10),ADnumber integer(12),file);";
+/*if(mysqli_query($connection,$query))
+{
+	echo "table created";
+}
+else
+{
+	echo "error:".mysqli_error($connection);
+}*/
+
+
+
+?>

@@ -1,0 +1,70 @@
+h1{
+	text-align: center;
+	color: red;
+	background-color: yellow;
+	
+}
+p{
+line-height: 30px;
+}
+h2{
+	color: red;
+	text-shadow: 1px 1px green;
+	background-color: aqua;
+}
+body{
+	margin-top: 0px;
+	margin-right: 45px;
+	margin-bottom: 10px;
+	margin-left: 45px;
+	padding: 0px;
+}
+#beauty{
+	float: left;
+	width: 370px;;
+	height: 300px
+	
+}
+
+
+div ul{
+	list-style-type: none;
+	text-align: center;
+	color: red;
+	line-height: 25px;
+	
+
+}
+div ul li:hover{
+	background-color: pink;
+	color: white;
+}
+div table tr:hover{
+	background-color: pink;
+	color: red;
+}
+#ikku{
+float: left;
+}
+.foot{
+	background-color: aqua;
+	display:flex;
+	justify-content:space-between;
+}
+
+ .back a{
+                width:100px;
+                float:right;
+                height:100%;
+                background-color:white;
+                border:0px;
+                color:black;
+                text-transform:uppercase;
+                text-decoration:none;
+                font-size:25px;
+                margin-top:20px;
+                margin-right:20px;     
+
+
+            }
+            

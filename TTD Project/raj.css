@@ -1,0 +1,58 @@
+ *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        background-image: url('background.jpg');
+        background-size: 100%;
+        background-attachment: fixed;
+        margin-top: 0px;
+        margin-left:10px;
+        
+    }
+    ul{
+        list-style-type: none;
+		   
+    }
+    ul li:hover{
+        background-color: white;
+        color: red;
+       
+    }
+    ul li{
+        float: left;
+        width: 170px;
+        height: 50px;
+        line-height: 40px;
+        background-color: rgba(26, 86, 218,0.6);
+        text-align: center;
+        font-size: 18px;
+        border-radius: 20px;
+
+    }
+    ul li a{
+    
+        text-decoration: none;
+        color: black;
+    } 
+    ul li ul{
+        display: none;
+    }
+
+  ul li:hover > ul{
+    display: block;
+
+  }
+  ul li ul li{
+    position: relative;
+  }
+ul li ul li ul{
+    position: absolute;
+    margin-left: 200px;
+    top: 0px;
+    overflow: scroll;
+}
+.first{
+	list-style-type: circle;
+}
+	
